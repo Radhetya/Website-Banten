@@ -1,0 +1,366 @@
+/*=================================================Dashboard=================================================*/
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f8ff; /* Warna biru muda */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #007bff; /* Biru */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: #0056b3; /* Biru lebih gelap */
+}
+
+/* Konten utama */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 270px; /* Beri jarak dari sidebar */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background: #0056b3; /* Biru gelap */
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+/* Area konten */
+#content-area {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+/* Dashboard Box */
+.dashboard-box {
+    background: #e3f2fd;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #007bff;
+    color: white;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button-primary {
+    background: #007bff;
+    color: white;
+}
+
+.button-primary:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.button-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.button-danger:hover {
+    background: #b02a37;
+    transform: scale(1.05);
+}
+/*=================================================Dashboard=================================================*/
+
+/*=================================================Login=================================================*/
+/* Login Container */
+.login-container {
+    width: 320px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.login-container button:hover {
+    background: #0056b3;
+}
+/*=================================================Login=================================================*/
+
+/*=================================================Checkout=================================================*/
+/* General Styles */
+.halaman-tambah {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+.title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Form Inputs */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Textarea */
+.form-textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background: #218838;
+}
+
+/* Back Button */
+.btn-back {
+    display: block;
+    margin: 15px auto;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+}
+
+.btn-back:hover {
+    background: #0056b3;
+}
+
+body.checkout-page {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Menjaga agar form tidak terpotong atas */
+    height: auto; /* Mengubah dari min-height agar mengikuti kontennya */
+    padding-top: 20px; /* Tambah jarak atas */
+    padding-bottom: 50px; /* Tambah jarak bawah agar tidak mepet */
+    box-sizing: border-box;
+}
+
+.checkout-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.order-form {
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-textarea {
+    resize: none;
+    height: 80px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.order-table th {
+    background: #007bff;
+    color: white;
+}
+
+
+#total-harga {
+    display: block; /* Agar bisa diatur lebarnya */
+    text-align: center; /* Memusatkan teks */
+    background: #fff3cd; /* Latar belakang kuning */
+    padding: 10px; /* Ruang agar tidak terlalu mepet */
+    border-radius: 5px; /* Membuat sudut membulat */
+    font-size: 22px; /* Ukuran teks lebih besar */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    color: #d9534f; /* Warna merah untuk menonjolkan total harga */
+    width: 100%; /* Memastikan elemen memenuhi lebar parent */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*=================================================Checkout=================================================*/
+
+
+
